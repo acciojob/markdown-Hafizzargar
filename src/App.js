@@ -12,10 +12,10 @@ function App() {
     setMarkdown(e.target.value);
 
   }
-  function abc(){
-    setm(markdown);
+  // function abc(){
+  //   setm(markdown);
 
-  }
+  // }
 
 
   return (
@@ -24,9 +24,9 @@ function App() {
       <div>
         <textarea className='textarea' value={markdown} onChange={handleMarkdownChange} />
       </div>
-      <button onClick={abc}>Submit</button>
+      {/* <button onClick={abc}>Submit</button> */}
       <div>
-        <div className="preview">{m}</div>
+        <div className="preview"><h1>{markdown}</h1></div>
       </div>
     </div>
       

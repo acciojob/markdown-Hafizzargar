@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 
 
 import "./styles/App.css";
+import { useEffect } from 'react';
 // import { useEffect,useState } from 'react';
 
 function App() {
@@ -12,7 +13,11 @@ function App() {
     setMarkdown(e.target.value);
 
   }
-  // function abc(){
+  useEffect(()=>{
+    setm(markdown);
+
+  },[markdown])
+  // function abc(){git
   //   setm(markdown);
 
   // }
@@ -26,7 +31,7 @@ function App() {
       </div>
       {/* <button onClick={abc}>Submit</button> */}
       <div>
-        <div className="preview"><h1>{markdown}</h1></div>
+        <div className="preview"><h1>{m}</h1></div>
       </div>
     </div>
       
